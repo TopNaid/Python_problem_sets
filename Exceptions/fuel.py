@@ -2,10 +2,6 @@ def main():
     filling = get_fuel()
     print (filling)
 
-
-
-
-
 def get_fuel():  
     while True:  
         try:
@@ -20,11 +16,9 @@ def get_fuel():
                 return 'F' 
             elif cat <= 1:
                return 'E'
-        except ValueError:
-            pass
-        except ZeroDivisionError:
-            pass
-
+        except (ValueError,ZeroDivisionError):
+                pass
+       
         else:
             return f'{cat}%'
         
