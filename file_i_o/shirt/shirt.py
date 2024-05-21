@@ -7,7 +7,7 @@ def main():
     command_line()
 
     try:
-        desired_size = (600, 500)  # Example size: (width, height)
+        desired_size = (600, 600)  # Example size: (width, height)
         muppet = Image.open(sys.argv[1])
         muppet = ImageOps.fit(muppet, desired_size)
 
@@ -15,10 +15,6 @@ def main():
         size = shirt.size
         muppet.paste(shirt, shirt)
         muppet.save(sys.argv[2])
-
-
-
-#background_image.paste(overlay_image, (upper_left_x, upper_left_y))
 
     except FileNotFoundError:
         sys.exit("File Not Found")
