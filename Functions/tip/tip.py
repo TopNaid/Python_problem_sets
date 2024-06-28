@@ -14,5 +14,4 @@ def percent_to_float(p):
     per= float(p.replace('%',""))/100
     return per
 
-
 main()

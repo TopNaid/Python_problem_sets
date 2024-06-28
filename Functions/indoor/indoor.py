@@ -1,2 +1,2 @@
-door = input(" ").lower().strip()
-print(f"{door}")
+door = input("input: ").lower().strip()
+print(door, end="")
