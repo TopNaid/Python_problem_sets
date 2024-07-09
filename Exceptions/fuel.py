@@ -16,7 +16,7 @@ def get_fuel():
                 return 'F' 
             elif cat <= 1:
                return 'E'
-        except (ValueError,ZeroDivisionError):
+        except (ValueError,ZeroDivisionError, IndexError):
                 pass
        
         else:
